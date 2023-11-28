@@ -1,4 +1,36 @@
 ---
-title: Home
+title: 首页
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+<div style="flex-grow: 1;display: flex;flex-direction: row">
+    <!-- 主内容区域 -->
+    <div class="w3-container w3-pale-green" style="flex: 3;margin: 10px;display: flex;flex-direction: column;">
+        <!-- 文章列表 -->
+        <div style="flex-grow: 1;display: block;">
+            <ul style="list-style-type: none;">
+                {% for post in site.posts %}
+                <li>
+                    <div class="w3-panel w3-sand w3-hover-grayscale">
+                        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                        {{ post.excerpt }}
+                        <p>2023-2-12</p>
+                    </div>
+                    <hr />
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- 分页 -->
+        <div class="w3-bar page-bar w3-section">
+            <a href="#" class="w3-button">«</a>
+            <a href="#" class="w3-button w3-green">1</a>
+            <a href="#" class="w3-button">2</a>
+            <a href="#" class="w3-button">3</a>
+            <a href="#" class="w3-button">4</a>
+            <a href="#" class="w3-button">»</a>
+        </div>
+    </div>
+    <!-- 右边的标签区域 -->
+    <div style="flex: 1;background-color: lightgray;margin: 10px;">
+        {% include tags.html %}
+    </div>
+</div>

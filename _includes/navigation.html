@@ -1,5 +1,8 @@
-<nav>
+<!-- 导航标签 -->
+<!-- w3-text-black表示当前选中的标签 -->
+<div class="w3-bar w3-large w3-teal">
   {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  <a href="{{ item.link }}"
+    class="w3-bar-item w3-button w3-hover-none w3-border-teal w3-hover-text-black w3-bottombar w3-hover-border-white {% if page.url==item.link %}w3-text-black{% endif %}">{{item.name}}</a>
   {% endfor %}
-</nav>
+</div>

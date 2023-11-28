@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.cn/w3css/4/w3.css">
+<style rel="stylesheet">
+    html,
+    body {
+        box-sizing: border-box;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .page-bar,
+    .page-header,
+    .page-footer {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    hr {
+        height: 6px;
+        background-color: sandybrown;
+        border: none;
+    }
+</style>
+
+<body>
+    <div style="display: flex;flex-direction: column;min-height: 100%;">
+        <header class="page-header">
+            <div class="w3-container w3-center w3-teal">
+                <h1>Learning Notes</h1>
+                <strong>
+                    沧浪之水清兮，可以濯吾缨；沧浪之水浊兮，可以濯吾足。
+                </strong>
+            </div>
+        </header>
+        <!-- 导航标签 -->
+        <!-- w3-text-black表示当前选中的标签 -->
+        <div class="w3-bar w3-teal">
+            <a href="#"
+                class="w3-bar-item w3-button w3-hover-none w3-border-teal w3-hover-text-black w3-bottombar w3-hover-border-white w3-text-black">首页</a>
+            <a href="#"
+                class="w3-bar-item w3-button w3-hover-none w3-border-teal w3-hover-text-black w3-bottombar w3-hover-border-white">书单</a>
+        </div>
+        <!-- 内容 -->
+        <div style="flex-grow: 1;display: flex;flex-direction: row">
+            <!-- 主内容区域 -->
+            <div class="w3-container w3-pale-green" style="flex: 3;margin: 10px;display: flex;flex-direction: column;">
+                <!-- 文章列表 -->
+                <div style="flex-grow: 1;display: block;">
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <div class="w3-panel w3-sand w3-hover-grayscale">
+                                <h2><a href="#">主机字节序</a></h2>
+                                <p>2023-2-12</p>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <div class="w3-panel w3-sand w3-hover-grayscale">
+                                <h2><a href="#">网络字节序</a></h2>
+                                <p>2023-2-12</p>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <div class="w3-panel w3-sand w3-hover-grayscale">
+                                <h2><a href="#">电脑存储模式</a></h2>
+                                <p>2023-2-12</p>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <div class="w3-panel w3-sand w3-hover-grayscale">
+                                <h2><a href="#">大小端模式</a></h2>
+                                <p>2023-2-12</p>
+                            </div>
+                            <hr />
+                        </li>
+                    </ul>
+                </div>
+                <!-- 分页 -->
+                <div class="w3-bar page-bar w3-section">
+                    <a href="#" class="w3-button">«</a>
+                    <a href="#" class="w3-button w3-green">1</a>
+                    <a href="#" class="w3-button">2</a>
+                    <a href="#" class="w3-button">3</a>
+                    <a href="#" class="w3-button">4</a>
+                    <a href="#" class="w3-button">»</a>
+                </div>
+            </div>
+            <!-- 右边的标签区域 -->
+            <div style="flex: 1;background-color: lightgray;margin: 10px;">
+                <div class="w3-container">
+                    <h2>标签</h2>
+                    <span class="w3-tag w3-margin-bottom w3-blue">C/C++</span>
+                    <span class="w3-tag w3-margin-bottom w3-teal">Linux</span>
+                    <span class="w3-tag w3-margin-bottom w3-red">算法</span>
+                    <span class="w3-tag w3-margin-bottom w3-green">红黑二叉树</span>
+                    <span class="w3-tag w3-margin-bottom w3-teal">数据结构</span>
+                    <span class="w3-tag w3-margin-bottom w3-yellow">计算机</span>
+                    <span class="w3-tag w3-margin-bottom w3-blue">C/C++</span>
+                    <span class="w3-tag w3-margin-bottom w3-teal">Linux</span>
+                    <span class="w3-tag w3-margin-bottom w3-red">算法</span>
+                    <span class="w3-tag w3-margin-bottom w3-green">红黑二叉树</span>
+                    <span class="w3-tag w3-margin-bottom w3-teal">数据结构</span>
+                    <span class="w3-tag w3-margin-bottom w3-yellow">计算机</span>
+                    <span class="w3-tag w3-margin-bottom w3-blue">C/C++</span>
+                    <span class="w3-tag w3-margin-bottom w3-teal">Linux</span>
+                    <span class="w3-tag w3-margin-bottom w3-red">算法</span>
+                    <span class="w3-tag w3-margin-bottom w3-green">红黑二叉树</span>
+                    <span class="w3-tag w3-margin-bottom w3-teal">数据结构</span>
+                    <span class="w3-tag w3-margin-bottom w3-yellow">计算机</span>
+                    <span class="w3-tag w3-margin-bottom w3-blue">C/C++</span>
+                    <span class="w3-tag w3-margin-bottom w3-teal">Linux</span>
+                    <span class="w3-tag w3-margin-bottom w3-red">算法</span>
+                    <span class="w3-tag w3-margin-bottom w3-green">红黑二叉树</span>
+                    <span class="w3-tag w3-margin-bottom w3-teal">数据结构</span>
+                    <span class="w3-tag w3-margin-bottom w3-yellow">计算机</span>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer">
+            <div class="w3-container w3-center w3-teal">
+                <h2>just notes~记录点滴</h2>
+                <p>copyright@2023 by json</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
