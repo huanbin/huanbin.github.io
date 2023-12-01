@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>学习Markdown基本语法</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/fruity.css">
+  <style rel="stylesheet">
+    html,
+    body {
+      box-sizing: border-box;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .page-bar,
+    .page-header,
+    .page-footer {
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+
+    hr {
+      height: 6px;
+      background-color: sandybrown;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: flex;flex-direction: column;min-height: 100%;">
+    <!-- header -->
+    <header class="page-header">
+    <div class="w3-container w3-center w3-teal">
+        <h1>Learning Notes</h1>
+        <strong>
+            沧浪之水清兮，可以濯吾缨；沧浪之水浊兮，可以濯吾足。
+        </strong>
+    </div>
+</header>
+    <!-- 导航标签 -->
+    <!-- 导航标签 -->
+<!-- w3-text-black表示当前选中的标签 -->
+<div class="w3-bar w3-large w3-teal">
+  
+  <a href="/"
+    class="w3-bar-item w3-button w3-hover-none w3-border-teal w3-hover-text-black w3-bottombar w3-hover-border-white ">Home</a>
+  
+  <a href="/books.html"
+    class="w3-bar-item w3-button w3-hover-none w3-border-teal w3-hover-text-black w3-bottombar w3-hover-border-white ">Books</a>
+  
+</div>
+    <!-- 内容 -->
+    <div class="w3-container" style="flex-grow: 1;display: flex;flex-direction: column;">
+    <h1>学习Markdown基本语法</h1>
+
+<p>
+  01 Dec 2023
+  
+</p>
+
+<h2 id="学习markdown格式">学习Markdown格式</h2>
+
+<ol>
+  <li>标题
+    <h1 id="我是标题h1">我是标题h1</h1>
+    <h2 id="我是标题h2">我是标题h2</h2>
+    <h3 id="我是标题h3">我是标题h3</h3>
+    <h4 id="我是标题h4">我是标题h4</h4>
+    <h5 id="我是标题h5">我是标题h5</h5>
+    <h6 id="我是标题h6">我是标题h6</h6>
+  </li>
+  <li>
+    <p>链接（a标签）<br />
+<a href="http://www.baidu.com" title="title可选">标签文本内容</a></p>
+  </li>
+  <li>图片（image标签）
+    <ol>
+      <li>网络图片<br />
+<img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.duz6S7Fvygrqd6Yj_DcXAQHaF7?rs=1&amp;pid=ImgDetMain,&quot;title可选&quot;" alt="图片加载失败时显示的文本描述信息" /></li>
+      <li>本地图片：<br />
+<img src="/images/1.jpg,&quot;title可选&quot;" alt="图片加载失败时显示的文本描述信息" /></li>
+    </ol>
+  </li>
+  <li>
+    <p>字体效果<br />
+1.斜体（em标签）<br />
+  <em>斜体</em><br />
+2.粗体（strong标签）<br />
+  <strong>粗体</strong></p>
+  </li>
+  <li>有序列表
+    <ol>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+      <li>item5</li>
+    </ol>
+  </li>
+  <li>无序列表
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+      <li>item5</li>
+    </ul>
+  </li>
+  <li>手动换行，在末尾输入2个或以上空格<br />
+您好，<br />
+大家好。</li>
+  <li>代码
+    <ol>
+      <li>单行代码
+        <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></code></pre></div>        </div>
+      </li>
+      <li>代码块
+        <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+#include</span><span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
+</span></code></pre></div>        </div>
+      </li>
+    </ol>
+  </li>
+  <li>代码格式化，代码前面空4个空格或者一个tab键
+    <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     <span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span>     <span class="k">typedef</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">byte</span><span class="p">;</span>
+     <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="k">const</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>  
+     <span class="p">{</span>  
+       <span class="n">byte</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>  
+       <span class="n">printf</span><span class="p">(</span><span class="s">"b=%u</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">b</span><span class="p">);</span>  
+       <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>  
+      <span class="p">}</span>           
+</code></pre></div>    </div>
+  </li>
+  <li>引用
+    <blockquote>
+      <p>引用的内容，可以是任何内容，纯文字、代码、图片等等</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>转义(已经提供这些字符的转义显示)
+###显示<code class="language-plaintext highlighter-rouge">字符本身：
+You can include literal backticks
+like </code><code class="language-plaintext highlighter-rouge"> </code>this<code class="language-plaintext highlighter-rouge"> </code>`.
+###显示斜杠
+\</p>
+  </li>
+  <li>分割线（hr标签），可以用3个*、3个-、4个-，如下</li>
+</ol>
+
+<hr />
+<hr />
+<hr />
+
+
+</div>
+    <!-- footer -->
+    <footer class="page-footer">
+  <div class="w3-container w3-center w3-teal">
+    <h2>just notes~记录点滴</h2>
+    <p>copyright@2023 by json</p>
+  </div>
+</footer>
+  </div>
+</body>
+
+</html>

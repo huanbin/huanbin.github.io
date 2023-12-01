@@ -47,14 +47,16 @@ tags: Markdown
    大家好。
 8. 代码
    1. 单行代码  
-      `#include<stdio.h>`   
+      ```c
+      #include<stdio.h>
+      ```  
    2. 代码块  
-      ```
-      #include<stdio.h>   
+      ```c
+      #include<stdio.h>
       #include<stdlib.h>
       ```
 9. 代码格式化，代码前面空4个空格或者一个tab键   
-
+   ```c
         #include <stdio.h>
         typedef unsigned char byte;
         int main(int argc, char const *argv[])  
@@ -63,7 +65,7 @@ tags: Markdown
           printf("b=%u\n", b);  
           return 0;  
          }           
-
+   ```
 10. 引用
    > 引用的内容，可以是任何内容，纯文字、代码、图片等等
 
