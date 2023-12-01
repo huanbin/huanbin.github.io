@@ -17,3 +17,5 @@ defaults:
       path: ""
     values:
       layout: "default"
+#显示未来时间的文章
+ future: true     
